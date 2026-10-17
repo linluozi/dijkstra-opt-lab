@@ -1,0 +1,14 @@
+[project]
+name = "dijkstra-opt-lab"
+version = "1.0.0"
+description = "Heap-based Dijkstra vs linear-scan Dijkstra: measured speedup by graph family, and the four defects the naive/optimized pair usually ships with"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "linluozi" }]
+keywords = ["dijkstra", "shortest-path", "heapq", "benchmark", "performance"]
+
+[project.optional-dependencies]
+charts = ["matplotlib>=3.7"]
+
+[tool.setuptools]
+py-modules = ["dijkstra_naive", "dijkstra_optimized", "_graph", "graphs", "benchmark"]
